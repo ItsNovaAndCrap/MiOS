@@ -53,7 +53,7 @@ $(toolchain_prefix)/bin/x86_64-elf-ld: $(binutils_src).tar.xz
 $(binutils_src).tar.xz:
 	mkdir -p toolchain
 	cd toolchain && wget https://ftp.gnu.org/gnu/binutils/binutils-$(binutils_version).tar.xz
-	cd toolchain && tar xf binutils-$(binutils_version).xz
+	cd toolchain && tar xf binutils-$(binutils_version).tar.xz
 
 gcc_version = 12.2.0
 gcc_src = toolchain/gcc-$(gcc_version)
